@@ -1,0 +1,21 @@
+What is an Exception?
+ 
+In Java, an exception is an unexpected event that disrupts the normal flow of a program.
+
+Exception HIerarchy : 
+
+Object
+  └── Throwable
+       ├── Error
+       │     └── OutOfMemoryError, StackOverflowError
+       └── Exception
+             ├── Checked Exceptions (IOException, SQLException)
+             └── Unchecked Exceptions (RuntimeException, NullPointerException, ArithmeticException)
+
+Checked vs Unchecked Exceptions
+ 
+Checked: Java forces you to handle them at compile time.
+Example: Reading from a file → File might not exist.
+
+Unchecked: Occur at runtime; no compiler warning.
+Example: Dividing by zero.
